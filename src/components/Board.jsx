@@ -33,7 +33,7 @@ export function Board({history, onPlay}
   } else if (history.length === 9) {
     status = `Draw`;
   } else {
-    status = `Next player: ${lastPlay ? 'X' : 'O'}`;
+    status = `Next player: ${lastPlay ? (lastPlay.player === 'X' ? 'O' : 'X') : 'X'}`;
   }
   
   // Generate squares

@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import './App.css';
+import './styles.css';
 import {Board} from "./components/Board";
 import {GameInfo} from "./components/GameInfo";
 
@@ -13,7 +13,7 @@ import {GameInfo} from "./components/GameInfo";
  */
 
 function App() {
-  const [history, setHistory] = useState < Array < Play >> ([]);
+  const [history, setHistory] = useState([]);
 
   /**
    *
